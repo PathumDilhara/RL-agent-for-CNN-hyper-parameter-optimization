@@ -1,0 +1,9 @@
+# Ignore CSV exports
+*.csv
+
+# Ignore logs and data folders
+log/
+data/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
