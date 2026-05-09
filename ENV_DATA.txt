@@ -1,0 +1,17 @@
+ENV_NAME = RLCNNenv310
+KERNEL_NAME = Python (RL-CNN Agent)
+PACKAGES = numpy, pandas, torch
+
+conda create -n RLCNNenv310 python=3.10
+conda activate RLCNNenv310
+pip install ipykernel jupyter
+python -m ipykernel install --user --name RL_Agent_For_CNN_Tunning --display-name "Python (RL-CNN Agent)"
+
+
+
+
+# RUN ON CPU
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+
+# RUN ON GPU
+conda install pytorch torchvision cpuonly -c pytorch # only cpu pytorch matplotlib
